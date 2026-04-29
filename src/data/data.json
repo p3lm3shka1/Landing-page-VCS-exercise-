@@ -1,0 +1,307 @@
+{
+  "nav": {
+    "title": "React Landing Page",
+    "navItems": [
+      "Features",
+      "About",
+      "Services",
+      "Gallery",
+      "Testimonials",
+      "Team",
+      "Contact"
+    ]
+  },
+
+  "header": {
+    "titleA": "WE ARE A ",
+    "titleB": "LANDING PAGE",
+    "subtitle": "Discover the amazing features we offer. Join us today and take your business to the next level!. We are committed to delivering high-quality products and services that meet the needs of our clients.",
+    "buttonText": "Get Started"
+  },
+
+  "features": {
+    "title": "Features",
+    "featItems": [
+      {
+        "icon": "IoChatbubblesSharp",
+        "title": "Fast Performance",
+        "desc": "Experience lightning-fast load times and smooth interactions."
+      },
+      {
+        "icon": "HiSpeakerphone",
+        "title": "SEO Optimization",
+        "desc": "Improve your website's visibility on search engines with our SEO strategies."
+      },
+      {
+        "icon": "FaPeopleRobbery",
+        "title": "User-Friendly",
+        "desc": "Our platform is designed with the user in mind, ensuring a seamless and intuitive experience."
+      },
+      {
+        "icon": "PiMagicWandFill",
+        "title": "Mobile Responsive",
+        "desc": "Looks great on all devices, from desktops to smartphones."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "text": "We are a team of passionate developers dedicated to creating stunning landing pages that convert visitors into customers. Our mission is to help businesses succeed online by providing high-quality, customizable templates that are easy to use and visually appealing.",
+    "whyUs": "Why choose us?",
+    "whyUsItemsA": [
+      {
+        "icon": "IoCheckmark",
+        "title": "Expert Team"
+      },
+      {
+        "icon": "IoCheckmark",
+        "title": "Affordable Pricing"
+      },
+      {
+        "icon": "IoCheckmark",
+        "title": "Excellent Support"
+      },
+      {
+        "icon": "IoCheckmark",
+        "title": "Regular Updates"
+      }
+    ],
+    "whyUsItemsB": [
+      {
+        "icon": "IoCheckmark",
+        "title": "Easy Customization"
+      },
+      {
+        "icon": "IoCheckmark",
+        "title": "High Conversion Rates"
+      },
+      {
+        "icon": "IoCheckmark",
+        "title": "SEO Friendly"
+      },
+      {
+        "icon": "IoCheckmark",
+        "title": "Mobile Responsive"
+      }
+    ]
+  },
+  "services": {
+    "title": "OUR SERVICES",
+    "text": "We offer a wide range of services to help your business thrive online. From web development to digital marketing, our team of experts is here to support you every step of the way.",
+    "servicesItems": [
+      {
+        "icon": "FaWordpress",
+        "title": "WordPress Development",
+        "desc": "We create custom WordPress themes and plugins tailored to your specific needs."
+      },
+      {
+        "icon": "FaCartArrowDown",
+        "title": "E-commerce Solutions",
+        "desc": "Our design team creates visually stunning and user-friendly interfaces for your online store."
+      },
+      {
+        "icon": "IoMdCloudDownload",
+        "title": "Cloud Hosting",
+        "desc": "Reliable and scalable cloud hosting solutions to ensure your website is always available."
+      },
+      {
+        "icon": "MdGTranslate",
+        "title": "Translation Services",
+        "desc": "Expand your global reach with our professional translation services."
+      },
+      {
+        "icon": "MdOutlineQueryStats",
+        "title": "Email Marketing",
+        "desc": "Grow your online presence with our email marketing strategies."
+      },
+      {
+        "icon": "FaPaperPlane",
+        "title": "Statistics and Analytics",
+        "desc": "Gain insights into your business performance with our comprehensive analytics tools."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "GALLERY",
+    "text": "Explore our gallery to see examples of our work and the amazing results we've achieved for our clients.",
+    "imagesS": [
+      {
+        "url": "img01s",
+        "alt": "Gallery Image 1"
+      },
+      {
+        "url": "img02s",
+        "alt": "Gallery Image 2"
+      },
+      {
+        "url": "img03s",
+        "alt": "Gallery Image 3"
+      },
+      {
+        "url": "img04s",
+        "alt": "Gallery Image 4"
+      },
+      {
+        "url": "img05s",
+        "alt": "Gallery Image 5"
+      },
+      {
+        "url": "img06s",
+        "alt": "Gallery Image 6"
+      },
+      {
+        "url": "img07s",
+        "alt": "Gallery Image 7"
+      },
+      {
+        "url": "img08s",
+        "alt": "Gallery Image 8"
+      },
+      {
+        "url": "img09s",
+        "alt": "Gallery Image 9"
+      }
+    ],
+    "imagesL": [
+      {
+        "url": "img01l",
+        "alt": "Gallery Image 1"
+      },
+      {
+        "url": "img02l",
+        "alt": "Gallery Image 2"
+      },
+      {
+        "url": "img03l",
+        "alt": "Gallery Image 3"
+      },
+      {
+        "url": "img04l",
+        "alt": "Gallery Image 4"
+      },
+      {
+        "url": "img05l",
+        "alt": "Gallery Image 5"
+      },
+      {
+        "url": "img06l",
+        "alt": "Gallery Image 6"
+      },
+      {
+        "url": "img07l",
+        "alt": "Gallery Image 7"
+      },
+      {
+        "url": "img08l",
+        "alt": "Gallery Image 8"
+      },
+      {
+        "url": "img09l",
+        "alt": "Gallery Image 9"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "text": "Don't just take our word for it. Hear what our satisfied clients have to say about their experience working with us.",
+    "tItems": [
+      {
+        "avatar": "avatar1",
+        "name": "- John Doe",
+        "text": "This landing page template is amazing! It helped us increase our conversion rates significantly."
+      },
+      {
+        "avatar": "avatar2",
+        "name": "- Jane Smith",
+        "text": "The design is stunning and the customization options are fantastic. Highly recommend!"
+      },
+      {
+        "avatar": "avatar3",
+        "name": "- Emily Johnson",
+        "text": "The support team was incredibly helpful and responsive. We couldn't be happier with the results."
+      },
+      {
+        "avatar": "avatar4",
+        "name": "- Michael Brown",
+        "text": "The performance of this landing page is outstanding. Our website loads in seconds!"
+      },
+      {
+        "avatar": "avatar5",
+        "name": "- Sarah Davis",
+        "text": "Our sales have skyrocketed since we started using this landing page template. It's a game-changer!"
+      },
+      {
+        "avatar": "avatar6",
+        "name": "- David Wilson",
+        "text": "The SEO optimization features have helped us rank higher in search results. We're seeing great traffic!"
+      }
+    ]
+  },
+  "team": {
+    "title": "Meet the team",
+    "text": "Our team is made up of talented and dedicated professionals who are passionate about helping your business succeed online.",
+    "teamMembers": [
+      {
+        "avatar": "avatar1",
+        "name": "Alice Johnson",
+        "role": "Lead Developer"
+      },
+      {
+        "avatar": "avatar2",
+        "name": "Bob Smith",
+        "role": "UI/UX Designer"
+      },
+      {
+        "avatar": "avatar3",
+        "name": "Charlie Brown",
+        "role": "SEO Specialist"
+      },
+      {
+        "avatar": "avatar4",
+        "name": "Diana Prince",
+        "role": "Project Manager"
+      }
+    ]
+  },
+  "contact": {
+    "title": "GET IN TOUCH",
+    "text": "Have questions or want to learn more about our services? Contact us today and we'll be happy to assist you.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "buttonText": "SEND MESSAGE"
+    },
+    "contactInfo": {
+      "title": "Contact Info",
+
+      "address": {
+        "icon": "CiLocationOn",
+        "text": "Address",
+        "link": "Gedimino pr. 9, Vilnius, LTU"
+      },
+
+      "phone": { "icon": "CiPhone", "text": "Phone", "link": "+37061234567" },
+      "email": {
+        "icon": "CiMail",
+        "text": "Email",
+        "link": "mailto:info@company.lt"
+      }
+    },
+    "social": [
+      {
+        "url": "https://www.facebook.com/your_page",
+        "icon": "FaFacebookF"
+      },
+      {
+        "url": "https://www.twitter.com/your_profile",
+        "icon": "FaTwitter"
+      },
+      { "url": "https://www.youtube.com/your_channel", "icon": "FaYoutube" }
+    ]
+  },
+  "footer": {
+    "text": "© 2026 React Landing Page. Designed by",
+    "link": "http://github.com/p3lm3shka1"
+  }
+}

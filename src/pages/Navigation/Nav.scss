@@ -20,13 +20,14 @@
 
   &__title {
     font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
   }
 
   &__links {
     list-style: none;
     display: flex;
     gap: $p-1;
-
     font-size: 14px;
 
     li {
@@ -35,7 +36,6 @@
         color: $black;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 1px;
         opacity: 0.8;
         @include transition;
         &:hover {

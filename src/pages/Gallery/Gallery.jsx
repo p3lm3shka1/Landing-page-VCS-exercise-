@@ -44,7 +44,7 @@ const imagesLarge = [
   img09l,
 ];
 
-const Gallery = () => {
+const Gallery = ({ title, txt }) => {
   const useOverlay = () => {
     const [showImg, setShowImg] = useState("");
     return {
@@ -61,21 +61,23 @@ const Gallery = () => {
     <section className="gallery" id="gallery">
       <div className="gallery__container">
         <div className="gallery__title">
-          <h2>GALLERY</h2>
+          <h2>{title}</h2>
           <span></span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leon.
-          </p>
+          <p>{txt}</p>
         </div>
         <div className="gallery__list">
           {imagesSmall.map((image, idx) => (
-            <img key={idx} src={image} onClick={() => open(idx)} />
+            <img
+              key={idx}
+              src={image}
+              alt={imagesLarge[idx]}
+              onClick={() => open(idx)}
+            />
           ))}
         </div>
         {show && (
           <div className="gallery__overlay" onClick={close}>
-            <img src={imagesLarge[index]} />
+            <img src={imagesLarge[index]} alt={imagesLarge[index]} />
           </div>
         )}
       </div>

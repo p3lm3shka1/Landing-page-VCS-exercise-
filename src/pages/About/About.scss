@@ -55,20 +55,21 @@
     letter-spacing: 0.5px;
   }
 
-  &__features {
+  .about__features {
     display: flex;
     gap: $p-3;
 
     ul {
       list-style: none;
+      margin-top: $p-0-5;
+    }
 
-      li {
-        margin-bottom: $p-0-5;
-        display: flex;
-        align-items: center;
-        font-size: 13px;
-        color: $black;
-      }
+    li {
+      margin-bottom: $p-0-5;
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: $black;
 
       .about__icon {
         color: $blue;

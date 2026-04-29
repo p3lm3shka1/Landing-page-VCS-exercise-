@@ -3,8 +3,6 @@
 @use "../../styles/media" as *;
 
 .services {
-  @include container;
-
   padding: $p-2 0;
   background: $gradient-reverse;
 

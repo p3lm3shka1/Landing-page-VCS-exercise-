@@ -34,10 +34,10 @@
 
 //hero
 @media (max-width: 900px) {
-  .hero__bg {
+  .header__bg {
     height: 48vh;
   }
-  .hero__content {
+  .header__content {
     height: 45vh;
     h1 {
       font-size: 2.1rem;
@@ -50,10 +50,10 @@
 }
 
 @media (max-width: 768px) {
-  .hero__bg {
-    height: 40vh;
+  .header__bg {
+    height: 45vh;
   }
-  .hero__content {
+  .header__content {
     h1 {
       font-size: 24px;
       letter-spacing: 1px;

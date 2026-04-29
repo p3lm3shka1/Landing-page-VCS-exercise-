@@ -2,10 +2,9 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/media" as *;
 
-.hero {
+.header {
   position: relative;
   text-align: center;
-  @include container;
 
   &__bg {
     width: 100%;

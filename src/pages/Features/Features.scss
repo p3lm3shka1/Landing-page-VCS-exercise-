@@ -3,7 +3,7 @@
 @use "../../styles/media" as *;
 
 .hero__features {
-  @include container;
+  width: 100%;
   background-color: $gray;
   color: $black;
   padding: $p-1 0;

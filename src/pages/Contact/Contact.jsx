@@ -3,13 +3,16 @@ import { CiMail, CiPhone, CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 import "./Contact.scss";
 
-const socials = [
-  { icon: <FaFacebookF />, url: "https://www.facebook.com/" },
-  { icon: <FaTwitter />, url: "https://www.twitter.com/" },
-  { icon: <FaYoutube />, url: "https://www.youtube.com/" },
-];
+const iconMap = {
+  CiLocationOn: <CiLocationOn />,
+  CiPhone: <CiPhone />,
+  CiMail: <CiMail />,
+  FaFacebookF: <FaFacebookF />,
+  FaTwitter: <FaTwitter />,
+  FaYoutube: <FaYoutube />,
+};
 
-const Contact = () => {
+const Contact = ({ t, txt, frm, cInfo, social }) => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [error, setError] = useState("");
   const [sent, setSent] = useState(false);
@@ -38,12 +41,9 @@ const Contact = () => {
       <div className="contact__container">
         <div className="contact__info-wrapper">
           <div className="contact__form__title">
-            <h2>GET IN TOUCH</h2>
+            <h2>{t}</h2>
             <span></span>
-            <p>
-              Please fill out the form below to send us an email and we will get
-              back to you as soon as possible.
-            </p>
+            <p>{txt}</p>
           </div>
           <form
             className="contact__form"
@@ -54,63 +54,67 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                placeholder="Name"
+                placeholder={frm.name}
                 value={form.name}
                 onChange={handleChange}
               />
               <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={frm.email}
                 value={form.email}
                 onChange={handleChange}
               />
             </div>
             <textarea
               name="message"
-              placeholder="Message"
+              placeholder={frm.message}
               value={form.message}
               onChange={handleChange}
             />
             {error && <div className="contact__form__error">{error}</div>}
             <button type="submit" className="contact__form__btn">
-              SEND MESSAGE
+              {frm.buttonText}
             </button>
           </form>
         </div>
         <div className="contact__info">
-          <h3>Contact Info</h3>
+          <h3>{cInfo.title}</h3>
+
           <h4>
-            <CiLocationOn />
-            Address
+            {iconMap[cInfo.address.icon]} {cInfo.address.text}
           </h4>
           <a
-            href="https://www.google.com/maps/place/4321+California+St,+San+Francisco,+CA+12345"
+            href="https://maps.app.goo.gl/eqZ4nLEq55h9afur5"
             target="_blank"
             rel="noopener noreferrer"
           >
-            4321 California St. San Francisco, CA 12345
+            {cInfo.address.link}
           </a>
+
           <h4>
-            <CiPhone /> Phone
+            {iconMap[cInfo.phone.icon]} {cInfo.phone.text}
           </h4>
-          <a href="tel:+11234561234">+1 123 456 1234</a>
+          <a href={`tel:${cInfo.phone.link}`}>{cInfo.phone.link}</a>
+
           <h4>
-            <CiMail /> Email
+            {iconMap[cInfo.email.icon]} {cInfo.email.text}
           </h4>
-          <a href="mailto:info@company.com">info@company.com</a>
+          <a href={cInfo.email.link}>
+            {cInfo.email.link.replace("mailto:", "")}
+          </a>
         </div>
       </div>
       <div className="contact__socials">
-        {socials.map((social, index) => (
+        {social.map(({ url, icon }, idx) => (
           <a
-            href={social.url}
-            key={index}
+            href={url}
+            key={idx}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Social link"
+            aria-label={icon}
           >
-            {social.icon}
+            {iconMap[icon]}
           </a>
         ))}
       </div>

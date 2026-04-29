@@ -3,14 +3,13 @@
 @use "../../styles/media" as *;
 
 .contact {
-  @include container;
+  width: 100%;
   background: $gradient;
   color: $white;
   padding: $p-3 0 $p-1;
 
   &__container {
-    width: 100%;
-    padding: $p-2;
+    @include container;
     display: flex;
     align-items: flex-start;
     gap: $p-4;
@@ -117,6 +116,8 @@
       margin-bottom: $p-1;
       color: $white;
       opacity: 0.6;
+      cursor: pointer;
+      @include transition;
 
       &:hover {
         opacity: 1;
