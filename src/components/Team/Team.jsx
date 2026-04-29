@@ -3,22 +3,22 @@ import "./Team.scss";
 
 const members = [
   {
-    avatar: "../../src/assets/images/team/01.jpg",
+    avatar: "../../assets/images/team/01.jpg",
     name: "John Doe",
     role: "Director",
   },
   {
-    avatar: "../../src/assets/images/team/02.jpg",
+    avatar: "../../assets/images/team/02.jpg",
     name: "Mike Doe",
     role: "Senior Designer",
   },
   {
-    avatar: "../../src/assets/images/team/03.jpg",
+    avatar: "../../assets/images/team/03.jpg",
     name: "Jane Doe",
     role: "Senior Designer",
   },
   {
-    avatar: "../../src/assets/images/team/04.jpg",
+    avatar: "../../assets/images/team/04.jpg",
     name: "Karen Doe",
     role: "Project Manager",
   },

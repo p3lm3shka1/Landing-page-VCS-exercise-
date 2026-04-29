@@ -3,32 +3,32 @@ import "./Testimonials.scss";
 
 const testimonials = [
   {
-    avatar: "../../src/assets/images/testimonials/01.jpg",
+    avatar: "../../assets/images/testimonials/01.jpg",
     name: "-Jonh Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
   {
-    avatar: "../../src/assets/images/testimonials/02.jpg",
+    avatar: "../../assets/images/testimonials/02.jpg",
     name: "-Johnatan Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
   {
-    avatar: "../../src/assets/images/testimonials/03.jpg",
+    avatar: "../../assets/images/testimonials/03.jpg",
     name: "-John Doe Jr",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
   {
-    avatar: "../../src/assets/images/testimonials/04.jpg",
+    avatar: "../../assets/images/testimonials/04.jpg",
     name: "-Jane Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
   {
-    avatar: "../../src/assets/images/testimonials/05.jpg",
+    avatar: "../../assets/images/testimonials/05.jpg",
     name: "-Johan Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
   {
-    avatar: "../../src/assets/images/testimonials/06.jpg",
+    avatar: "../../assets/images/testimonials/06.jpg",
     name: "-Janette Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },

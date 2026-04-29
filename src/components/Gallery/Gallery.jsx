@@ -3,27 +3,27 @@ import { useState } from "react";
 import "./Gallery.scss";
 
 const imagesSmall = [
-  { img: "../../src/assets/images/portfolio/01-small.jpg" },
-  { img: "../../src/assets/images/portfolio/02-small.jpg" },
-  { img: "../../src/assets/images/portfolio/03-small.jpg" },
-  { img: "../../src/assets/images/portfolio/04-small.jpg" },
-  { img: "../../src/assets/images/portfolio/05-small.jpg" },
-  { img: "../../src/assets/images/portfolio/06-small.jpg" },
-  { img: "../../src/assets/images/portfolio/07-small.jpg" },
-  { img: "../../src/assets/images/portfolio/08-small.jpg" },
-  { img: "../../src/assets/images/portfolio/09-small.jpg" },
+  { img: "../../assets/images/portfolio/01-small.jpg" },
+  { img: "../../assets/images/portfolio/02-small.jpg" },
+  { img: "../../assets/images/portfolio/03-small.jpg" },
+  { img: "../../assets/images/portfolio/04-small.jpg" },
+  { img: "../../assets/images/portfolio/05-small.jpg" },
+  { img: "../../assets/images/portfolio/06-small.jpg" },
+  { img: "../../assets/images/portfolio/07-small.jpg" },
+  { img: "../../assets/images/portfolio/08-small.jpg" },
+  { img: "../../assets/images/portfolio/09-small.jpg" },
 ];
 
 const imagesLarge = [
-  { img: "../../src/assets/images/portfolio/01-large.jpg" },
-  { img: "../../src/assets/images/portfolio/02-large.jpg" },
-  { img: "../../src/assets/images/portfolio/03-large.jpg" },
-  { img: "../../src/assets/images/portfolio/04-large.jpg" },
-  { img: "../../src/assets/images/portfolio/05-large.jpg" },
-  { img: "../../src/assets/images/portfolio/06-large.jpg" },
-  { img: "../../src/assets/images/portfolio/07-large.jpg" },
-  { img: "../../src/assets/images/portfolio/08-large.jpg" },
-  { img: "../../src/assets/images/portfolio/09-large.jpg" },
+  { img: "../../assets/images/portfolio/01-large.jpg" },
+  { img: "../../assets/images/portfolio/02-large.jpg" },
+  { img: "../../assets/images/portfolio/03-large.jpg" },
+  { img: "../../assets/images/portfolio/04-large.jpg" },
+  { img: "../../assets/images/portfolio/05-large.jpg" },
+  { img: "../../assets/images/portfolio/06-large.jpg" },
+  { img: "../../assets/images/portfolio/07-large.jpg" },
+  { img: "../../assets/images/portfolio/08-large.jpg" },
+  { img: "../../assets/images/portfolio/09-large.jpg" },
 ];
 
 const Gallery = () => {
