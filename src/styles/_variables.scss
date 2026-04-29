@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$gray: hsl(0, 0%, 96%);
+$gray-dark: hsl(220, 14%, 50%);
+$light-blue: hsl(213, 95%, 67%);
+$blue-underline: hsl(199, 100%, 72%);
+$blue: hsl(221, 96%, 68%);
+$box-shadow: 0px 10px 15px hsla(0, 0%, 0%, 20%);
+$gradient: linear-gradient(135deg, $light-blue, $blue);
+$gradient-reverse: linear-gradient(135deg, $blue, $light-blue);
+$error: hsl(0, 65%, 55%);
+
+$m-center: 0 auto;
+$p-0-5: 0.5rem;
+$p-1: 1rem;
+$p-1-5: 1.5rem;
+$p-2: 2rem;
+$p-2-5: 2.5rem;
+$p-3: 3rem;
+$p-3-5: 3.5rem;
+$p-4: 4rem;
+$p-4-5: 4.5rem;
+$p-5: 5rem;
+
+$font-primary: "Nunito Sans", sans-serif;

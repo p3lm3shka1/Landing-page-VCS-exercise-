@@ -1,0 +1,26 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/media" as *;
+
+.footer {
+  width: 100%;
+  padding: $p-1 0;
+  background: $gray;
+  color: $black;
+  text-align: center;
+
+  p {
+    @include p;
+
+    a {
+      color: $blue;
+      font-weight: 600;
+      text-decoration: none;
+      @include transition;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

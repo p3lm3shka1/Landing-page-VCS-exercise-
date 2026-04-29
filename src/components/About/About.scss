@@ -1,0 +1,82 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/media" as *;
+
+.about {
+  padding: $p-5 0;
+  background: $white;
+
+  &__container {
+    @include container;
+    display: flex;
+    align-items: flex-start;
+    gap: $p-4;
+  }
+
+  &__img-wrapper {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 380px;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__info {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  &__title {
+    h2 {
+      @include h-2;
+      margin-bottom: $p-0-5;
+    }
+
+    .about__title-underline {
+      @include underline;
+    }
+  }
+
+  &__desc {
+    @include p;
+  }
+
+  &__subtitle {
+    margin-top: $p-1;
+    margin-bottom: $p-0-5;
+    font-weight: 700;
+    color: $black;
+    letter-spacing: 0.5px;
+  }
+
+  &__features {
+    display: flex;
+    gap: $p-3;
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: $p-0-5;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        color: $black;
+      }
+
+      .about__icon {
+        color: $blue;
+        font-size: 13px;
+        margin-right: $p-0-5;
+        display: inline-block;
+        min-width: 16px;
+      }
+    }
+  }
+}

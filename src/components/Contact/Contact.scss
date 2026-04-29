@@ -1,0 +1,184 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/media" as *;
+
+.contact {
+  @include container;
+  background: $gradient;
+  color: $white;
+  padding: $p-3 0 $p-1;
+
+  &__container {
+    width: 100%;
+    padding: $p-2;
+    display: flex;
+    align-items: flex-start;
+    gap: $p-4;
+  }
+
+  &__form__title {
+    margin-bottom: $p-3;
+
+    h2 {
+      @include h-2;
+    }
+    span {
+      @include underline;
+      background: $blue-underline;
+      margin-bottom: $p-0-5;
+    }
+
+    p {
+      @include p;
+    }
+  }
+
+  &__info-wrapper {
+    justify-content: space-between;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $p-1;
+
+    &__row {
+      display: flex;
+      gap: $p-1;
+    }
+
+    input {
+      width: 100%;
+      font-family: $font-primary;
+      border: none;
+      padding: $p-0-5;
+      outline: none;
+      border: 1px solid $white;
+
+      &::placeholder {
+        @include p;
+      }
+    }
+
+    textarea {
+      font-family: $font-primary;
+      border: 1px solid $white;
+      min-height: 100px;
+      padding: $p-0-5;
+      outline: none;
+      margin-bottom: 0.3rem;
+      resize: none;
+
+      &::placeholder {
+        @include p;
+      }
+    }
+
+    &__btn {
+      width: fit-content;
+      background: transparent;
+      color: $white;
+      border: 2px solid $white;
+      border-radius: 24px;
+      padding: 0.7rem $p-2;
+      font-weight: 700;
+      cursor: pointer;
+      @include transition;
+
+      &:hover {
+        @include hover-btn;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin: $p-3 0 0 $p-5;
+
+    h3 {
+      font-size: 1.22rem;
+      margin-bottom: $p-1-5;
+      color: $white;
+    }
+
+    h4 {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      gap: $p-0-5;
+      margin-bottom: $p-1;
+      color: $white;
+    }
+
+    a {
+      text-decoration: none;
+      @include p;
+      margin-bottom: $p-1;
+      color: $white;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: underline;
+      }
+
+      svg {
+        font-size: 1.5rem;
+        background: $white;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: $p-2;
+    margin: $p-5 0 $p-2 0;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border: 2px solid $white;
+      border-radius: 50%;
+      color: $white;
+      font-size: 24px;
+      text-decoration: none;
+      @include transition;
+
+      &:hover {
+        @include hover-btn;
+      }
+    }
+  }
+
+  &__form__error {
+    color: $error;
+    border-color: $error;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  &__overlay {
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__modal {
+    background: rgba($black, 0.7);
+    border-radius: 10px;
+    color: $white;
+    padding: $p-2;
+    min-width: 220px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}

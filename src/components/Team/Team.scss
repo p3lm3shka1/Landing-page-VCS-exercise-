@@ -1,0 +1,58 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/media" as *;
+
+.team {
+  padding: $p-2 0;
+  text-align: center;
+  width: 100%;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    margin-bottom: $p-2;
+
+    h2 {
+      @include h-2;
+    }
+
+    span {
+      @include underline;
+      margin-bottom: $p-0-5;
+    }
+
+    p {
+      @include p;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: $p-2;
+  }
+
+  &__member {
+    width: 200px;
+    padding: $p-1;
+
+    &__avatar {
+      margin-bottom: $p-1;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    &__name {
+      font-weight: 700;
+    }
+
+    &__role {
+      @include p;
+    }
+  }
+}

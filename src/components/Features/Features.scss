@@ -1,0 +1,57 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/media" as *;
+
+.hero__features {
+  @include container;
+  background-color: $gray;
+  color: $black;
+  padding: $p-1 0;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    position: relative;
+    margin-top: $p-4;
+
+    h1 {
+      @include h-2;
+    }
+
+    span {
+      @include underline;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: $p-2;
+    margin-top: $p-2;
+    justify-content: center;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: $p-1;
+      width: 250px;
+
+      &__icon {
+        @include icon;
+      }
+
+      &__title {
+        font-size: 18px;
+        margin-bottom: $p-0-5;
+      }
+
+      &__description {
+        color: $gray-dark;
+        font-size: 14px;
+      }
+    }
+  }
+}

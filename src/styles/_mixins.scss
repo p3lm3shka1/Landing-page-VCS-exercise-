@@ -1,0 +1,54 @@
+@use "./variables" as *;
+
+@mixin container {
+  max-width: 1200px;
+  margin: $m-center;
+}
+
+@mixin h-2 {
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+@mixin p {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+@mixin transition {
+  transition: all 0.3s ease;
+}
+
+@mixin underline {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background: $gradient;
+  border-radius: 2px;
+  margin-bottom: $p-1;
+}
+
+@mixin icon {
+  font-size: 2rem;
+  margin-bottom: $p-1;
+  color: $white;
+  background: $gradient;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  box-shadow: $box-shadow;
+}
+
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+}
+
+@mixin hover-btn {
+  background: $white;
+  color: $blue;
+}

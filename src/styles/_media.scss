@@ -1,0 +1,417 @@
+@use "./variables" as *;
+
+//nav
+@media (max-width: 900px) {
+  .nav {
+    .container {
+      padding: $p-1 $p-2;
+    }
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .nav__links {
+    li {
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+
+  .nav__menu__open {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+  .nav__menu__open {
+    display: block;
+  }
+}
+
+//hero
+@media (max-width: 900px) {
+  .hero__bg {
+    height: 48vh;
+  }
+  .hero__content {
+    height: 45vh;
+    h1 {
+      font-size: 2.1rem;
+    }
+    p {
+      font-size: 15px;
+      max-width: 460px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__bg {
+    height: 40vh;
+  }
+  .hero__content {
+    h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+      margin-bottom: $p-0-5;
+    }
+    p {
+      font-size: 13px;
+      margin-bottom: $p-1;
+    }
+    &__btn {
+      padding: $p-0-5 $p-1-5;
+    }
+  }
+}
+
+//features
+@media (max-width: 900px) {
+  .hero__features__container {
+    gap: $p-1;
+    &__item {
+      width: 190px;
+      padding: $p-0-5;
+      &__title {
+        font-size: 16px;
+      }
+      &__description {
+        font-size: 13px;
+      }
+    }
+  }
+  .hero__features__title {
+    margin-top: $p-2;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__features {
+    padding: $p-0-5 0;
+  }
+  .hero__features__container {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__item {
+      max-width: 200px;
+      width: 100%;
+
+      &__title {
+        font-size: 14px;
+      }
+      &__description {
+        font-size: 12px;
+      }
+    }
+  }
+  .hero__features__title h1 {
+    font-size: 16px;
+  }
+}
+
+//about
+@media (max-width: 900px) {
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+    gap: $p-2;
+  }
+  .about__img-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .about__info {
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin-top: $p-1;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: $p-2 0;
+  }
+  .about__title {
+    text-align: center;
+    order: 1;
+    h2 {
+      font-size: 18px;
+    }
+  }
+  .about__desc,
+  .about__features ul li {
+    order: 3;
+    font-size: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about__subtitle {
+    margin: $p-1-5;
+  }
+
+  .about__features {
+    margin: 0 $p-1-5;
+    align-items: center;
+    gap: $p-2;
+  }
+
+  .about__img-wrapper {
+    order: 2;
+    max-width: 400px;
+  }
+}
+
+//services
+@media (max-width: 900px) {
+  .services__list {
+    gap: $p-1;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: $p-1 0;
+  }
+  .services__title {
+    h2 {
+      font-size: 18px;
+    }
+  }
+  .services__list {
+    flex-wrap: wrap;
+    gap: $p-0-5;
+    padding: 0 $p-0-5;
+  }
+  .services__item {
+    padding: $p-0-5 0;
+    h3 {
+      font-size: 1rem;
+      margin-top: $p-0-5;
+    }
+    p {
+      font-size: 12px;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+  .services__icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+
+//galery
+@media (max-width: 900px) {
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+  }
+  .gallery__overlay {
+    img {
+      max-width: 80%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: $p-1;
+  }
+
+  .gallery__list {
+    grid-template-columns: 1fr;
+    max-width: 80%;
+    gap: $p-1 0;
+  }
+
+  .gallery__title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .gallery__overlay {
+    display: none;
+  }
+}
+
+//testimonials
+@media (max-width: 900px) {
+  .testimonials__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $p-2 $p-1;
+  }
+  .testimonial__avatar {
+    width: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: $p-2 0;
+  }
+  .testimonials__container h2 {
+    font-size: 18px;
+  }
+  .testimonials__list {
+    grid-template-columns: 1fr;
+    gap: $p-1;
+  }
+  .testimonial {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: $p-1;
+    gap: $p-0-5;
+  }
+  .testimonial__avatar {
+    width: 40px;
+    height: auto;
+  }
+  .testimonial__text {
+    font-size: 13px;
+    min-height: 38px;
+  }
+}
+
+//team
+@media (max-width: 900px) {
+  .team__list {
+    gap: $p-1;
+  }
+  .team__member {
+    width: 160px;
+    padding: $p-0-5;
+  }
+}
+
+@media (max-width: 768px) {
+  .team__list {
+    flex-direction: column;
+    align-items: center;
+    gap: $p-1;
+  }
+
+  .team__member {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: $p-0-5;
+  }
+
+  .team__title {
+    font-size: 18px;
+  }
+}
+
+//contact
+@media (max-width: 900px) {
+  .contact {
+    padding: $p-2 0 $p-0-5;
+  }
+
+  .contact__container {
+    padding: 0 $p-0-5;
+  }
+
+  .contact__form__title h2 {
+    font-size: 20px;
+  }
+
+  .contact__form {
+    gap: 0.5rem;
+    &__row {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  .contact__info {
+    margin: $p-2 0 0 0;
+    h3 {
+      font-size: 1rem;
+    }
+    h4 {
+      font-size: 0.93rem;
+    }
+    p {
+      font-size: 0.93rem;
+      svg {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .contact__socials a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: $p-2 0 $p-0-5;
+  }
+
+  .contact__container {
+    padding: 0 $p-0-5;
+    flex-direction: column;
+  }
+
+  .contact__form__title {
+    text-align: center;
+  }
+
+  .contact__form {
+    gap: 0.5rem;
+    &__row {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  .contact__info {
+    margin: $p-2 0 0 0;
+  }
+}
+
+.contact__socials a {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+//footer
+@media (max-width: 900px) {
+  .footer {
+    padding: $p-0-5 0;
+    width: 100%;
+
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: $p-0-5 0;
+    width: 100%;
+
+    p {
+      font-size: 12px;
+      line-height: 1.4;
+    }
+  }
+}
