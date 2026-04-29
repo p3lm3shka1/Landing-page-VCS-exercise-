@@ -1,27 +1,16 @@
 import React from "react";
 import "./Team.scss";
 
+import avatar1 from "../../assets/images/team/01.jpg";
+import avatar2 from "../../assets/images/team/02.jpg";
+import avatar3 from "../../assets/images/team/03.jpg";
+import avatar4 from "../../assets/images/team/04.jpg";
+
 const members = [
-  {
-    avatar: require("../../assets/images/team/01.jpg"),
-    name: "John Doe",
-    role: "Director",
-  },
-  {
-    avatar: require("../../assets/images/team/02.jpg"),
-    name: "Mike Doe",
-    role: "Senior Designer",
-  },
-  {
-    avatar: require("../../assets/images/team/03.jpg"),
-    name: "Jane Doe",
-    role: "Senior Designer",
-  },
-  {
-    avatar: require("../../assets/images/team/04.jpg"),
-    name: "Karen Doe",
-    role: "Project Manager",
-  },
+  { avatar: avatar1, name: "John Doe", role: "Director" },
+  { avatar: avatar2, name: "Mike Doe", role: "Senior Designer" },
+  { avatar: avatar3, name: "Jane Doe", role: "Senior Designer" },
+  { avatar: avatar4, name: "Karen Doe", role: "Project Manager" },
 ];
 
 function Team() {

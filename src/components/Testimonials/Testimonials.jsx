@@ -1,34 +1,41 @@
 import React from "react";
 import "./Testimonials.scss";
 
+import avatar1 from "../../assets/images/testimonials/01.jpg";
+import avatar2 from "../../assets/images/testimonials/02.jpg";
+import avatar3 from "../../assets/images/testimonials/03.jpg";
+import avatar4 from "../../assets/images/testimonials/04.jpg";
+import avatar5 from "../../assets/images/testimonials/05.jpg";
+import avatar6 from "../../assets/images/testimonials/06.jpg";
+
 const testimonials = [
   {
-    avatar: require("../../assets/images/testimonials/01.jpg"),
+    avatar: avatar1,
     name: "-Jonh Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
   {
-    avatar: require("../../assets/images/testimonials/02.jpg"),
+    avatar: avatar2,
     name: "-Johnatan Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
   {
-    avatar: require("../../assets/images/testimonials/03.jpg"),
+    avatar: avatar3,
     name: "-John Doe Jr",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
   {
-    avatar: require("../../assets/images/testimonials/04.jpg"),
+    avatar: avatar4,
     name: "-Jane Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
   {
-    avatar: require("../../assets/images/testimonials/05.jpg"),
+    avatar: avatar5,
     name: "-Johan Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
   {
-    avatar: require("../../assets/images/testimonials/06.jpg"),
+    avatar: avatar6,
     name: "-Janette Doe",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, necessitatibus!",
   },
