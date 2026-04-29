@@ -3,27 +3,27 @@ import { useState } from "react";
 import "./Gallery.scss";
 
 const imagesSmall = [
-  { img: "../../assets/images/portfolio/01-small.jpg" },
-  { img: "../../assets/images/portfolio/02-small.jpg" },
-  { img: "../../assets/images/portfolio/03-small.jpg" },
-  { img: "../../assets/images/portfolio/04-small.jpg" },
-  { img: "../../assets/images/portfolio/05-small.jpg" },
-  { img: "../../assets/images/portfolio/06-small.jpg" },
-  { img: "../../assets/images/portfolio/07-small.jpg" },
-  { img: "../../assets/images/portfolio/08-small.jpg" },
-  { img: "../../assets/images/portfolio/09-small.jpg" },
+  require("../../assets/images/portfolio/01-small.jpg"),
+  require("../../assets/images/portfolio/02-small.jpg"),
+  require("../../assets/images/portfolio/03-small.jpg"),
+  require("../../assets/images/portfolio/04-small.jpg"),
+  require("../../assets/images/portfolio/05-small.jpg"),
+  require("../../assets/images/portfolio/06-small.jpg"),
+  require("../../assets/images/portfolio/07-small.jpg"),
+  require("../../assets/images/portfolio/08-small.jpg"),
+  require("../../assets/images/portfolio/09-small.jpg"),
 ];
 
 const imagesLarge = [
-  { img: "../../assets/images/portfolio/01-large.jpg" },
-  { img: "../../assets/images/portfolio/02-large.jpg" },
-  { img: "../../assets/images/portfolio/03-large.jpg" },
-  { img: "../../assets/images/portfolio/04-large.jpg" },
-  { img: "../../assets/images/portfolio/05-large.jpg" },
-  { img: "../../assets/images/portfolio/06-large.jpg" },
-  { img: "../../assets/images/portfolio/07-large.jpg" },
-  { img: "../../assets/images/portfolio/08-large.jpg" },
-  { img: "../../assets/images/portfolio/09-large.jpg" },
+  require("../../assets/images/portfolio/01-large.jpg"),
+  require("../../assets/images/portfolio/02-large.jpg"),
+  require("../../assets/images/portfolio/03-large.jpg"),
+  require("../../assets/images/portfolio/04-large.jpg"),
+  require("../../assets/images/portfolio/05-large.jpg"),
+  require("../../assets/images/portfolio/06-large.jpg"),
+  require("../../assets/images/portfolio/07-large.jpg"),
+  require("../../assets/images/portfolio/08-large.jpg"),
+  require("../../assets/images/portfolio/09-large.jpg"),
 ];
 
 const Gallery = () => {
@@ -53,12 +53,12 @@ const Gallery = () => {
         </div>
         <div className="gallery__list">
           {imagesSmall.map((image, index) => (
-            <img key={index} src={image.img} onClick={() => open(index)} />
+            <img key={index} src={image} onClick={() => open(index)} />
           ))}
         </div>
         {show && (
           <div className="gallery__overlay" onClick={close}>
-            <img src={imagesLarge[index].img} />
+            <img src={imagesLarge[index]} />
           </div>
         )}
       </div>
