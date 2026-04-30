@@ -23,22 +23,22 @@
     "title": "Features",
     "featItems": [
       {
-        "icon": "IoChatbubblesSharp",
+        "icon": "LuMessagesSquare",
         "title": "Fast Performance",
         "desc": "Experience lightning-fast load times and smooth interactions."
       },
       {
-        "icon": "HiSpeakerphone",
+        "icon": "LuMegaphone",
         "title": "SEO Optimization",
         "desc": "Improve your website's visibility on search engines with our SEO strategies."
       },
       {
-        "icon": "FaPeopleRobbery",
+        "icon": "LuUsers",
         "title": "User-Friendly",
         "desc": "Our platform is designed with the user in mind, ensuring a seamless and intuitive experience."
       },
       {
-        "icon": "PiMagicWandFill",
+        "icon": "LuWandSparkles",
         "title": "Mobile Responsive",
         "desc": "Looks great on all devices, from desktops to smartphones."
       }
@@ -100,22 +100,22 @@
         "desc": "Our design team creates visually stunning and user-friendly interfaces for your online store."
       },
       {
-        "icon": "IoMdCloudDownload",
+        "icon": "FaCloudDownloadAlt",
         "title": "Cloud Hosting",
         "desc": "Reliable and scalable cloud hosting solutions to ensure your website is always available."
       },
       {
-        "icon": "MdGTranslate",
+        "icon": "FaGlobe",
         "title": "Translation Services",
         "desc": "Expand your global reach with our professional translation services."
       },
       {
-        "icon": "MdOutlineQueryStats",
+        "icon": "FaPaperPlane",
         "title": "Email Marketing",
         "desc": "Grow your online presence with our email marketing strategies."
       },
       {
-        "icon": "FaPaperPlane",
+        "icon": "FaChartBar",
         "title": "Statistics and Analytics",
         "desc": "Gain insights into your business performance with our comprehensive analytics tools."
       }
@@ -202,9 +202,9 @@
     ]
   },
   "testimonials": {
-    "title": "What our clients say",
+    "title": "WHAT OUR CLIENTS SAY",
     "text": "Don't just take our word for it. Hear what our satisfied clients have to say about their experience working with us.",
-    "tItems": [
+    "users": [
       {
         "avatar": "avatar1",
         "name": "- John Doe",
@@ -276,14 +276,14 @@
       "title": "Contact Info",
 
       "address": {
-        "icon": "CiLocationOn",
+        "icon": "LuMapPin",
         "text": "Address",
         "link": "Gedimino pr. 9, Vilnius, LTU"
       },
 
-      "phone": { "icon": "CiPhone", "text": "Phone", "link": "+37061234567" },
+      "phone": { "icon": "LuPhone", "text": "Phone", "link": "+37061234567" },
       "email": {
-        "icon": "CiMail",
+        "icon": "LuMail",
         "text": "Email",
         "link": "mailto:info@company.lt"
       }
@@ -291,13 +291,13 @@
     "social": [
       {
         "url": "https://www.facebook.com/your_page",
-        "icon": "FaFacebookF"
+        "icon": "LuFacebook"
       },
       {
         "url": "https://www.twitter.com/your_profile",
-        "icon": "FaTwitter"
+        "icon": "LuTwitter"
       },
-      { "url": "https://www.youtube.com/your_channel", "icon": "FaYoutube" }
+      { "url": "https://www.youtube.com/your_channel", "icon": "LuYoutube" }
     ]
   },
   "footer": {

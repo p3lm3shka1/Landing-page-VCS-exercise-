@@ -8,20 +8,20 @@ import avatar4 from "../../assets/images/team/04.jpg";
 
 const members = [avatar1, avatar2, avatar3, avatar4];
 
-const Team = ({ t, txt, tM }) => {
+const Team = ({ title, txt, teamMembers }) => {
   return (
     <section className="team" id="team">
       <div className="team__container">
         <div className="team__title">
-          <h2>{t}</h2>
+          <h2>{title}</h2>
           <span></span>
           <p>{txt}</p>
         </div>
         <div className="team__list">
-          {tM.map((m, i) => (
+          {teamMembers.map((m, i) => (
             <div className="team__member" key={i}>
               <div className="team__member__avatar">
-                <img src={members[i]} alt={tM[i].name} />
+                <img src={members[i]} alt={teamMembers[i].name} />
               </div>
               <div className="team__member__name">{m.name}</div>
               <div className="team__member__role">{m.role}</div>

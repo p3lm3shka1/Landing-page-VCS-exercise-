@@ -38,7 +38,7 @@
       margin-bottom: $p-0-5;
     }
 
-    .about__title-underline {
+    &__underline {
       @include underline;
     }
   }
@@ -55,7 +55,7 @@
     letter-spacing: 0.5px;
   }
 
-  .about__features {
+  &__features {
     display: flex;
     gap: $p-3;
 
@@ -70,14 +70,14 @@
       align-items: center;
       font-size: 13px;
       color: $black;
+    }
 
-      .about__icon {
-        color: $blue;
-        font-size: 13px;
-        margin-right: $p-0-5;
-        display: inline-block;
-        min-width: 16px;
-      }
+    &__icon {
+      color: $blue;
+      font-size: 13px;
+      margin-right: $p-0-5;
+      display: inline-block;
+      min-width: 16px;
     }
   }
 }

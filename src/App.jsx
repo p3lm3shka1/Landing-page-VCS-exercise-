@@ -26,28 +26,31 @@ function App() {
     <>
       {landingPageData && (
         <>
-          <Nav t={landingPageData.nav.title} n={landingPageData.nav.navItems} />
+          <Nav
+            title={landingPageData.nav.title}
+            navItems={landingPageData.nav.navItems}
+          />
           <Header
-            tA={landingPageData.header.title}
-            tB={landingPageData.header.titleB}
-            s={landingPageData.header.subtitle}
-            btn={landingPageData.header.buttonText}
+            titleA={landingPageData.header.title}
+            titleB={landingPageData.header.titleB}
+            subtitle={landingPageData.header.subtitle}
+            buttonText={landingPageData.header.buttonText}
           />
           <Features
-            t={landingPageData.features.title}
-            f={landingPageData.features.featItems}
+            title={landingPageData.features.title}
+            featItems={landingPageData.features.featItems}
           />
           <About
-            t={landingPageData.about.title}
+            title={landingPageData.about.title}
             text={landingPageData.about.text}
-            why={landingPageData.about.whyUs}
+            whyUs={landingPageData.about.whyUs}
             whyItemsA={landingPageData.about.whyUsItemsA}
             whyItemsB={landingPageData.about.whyUsItemsB}
           />
           <Services
-            t={landingPageData.services.title}
+            title={landingPageData.services.title}
             txt={landingPageData.services.text}
-            sI={landingPageData.services.servicesItems}
+            servicesItems={landingPageData.services.servicesItems}
           />
           <Gallery
             title={landingPageData.gallery.title}
@@ -56,21 +59,21 @@ function App() {
             imgL={landingPageData.gallery.imagesL}
           />
           <Testimonials
-            t={landingPageData.testimonials.title}
-            txt={landingPageData.testimonials.text}
-            tItems={landingPageData.testimonials.tItems}
+            title={landingPageData.testimonials.title}
+            text={landingPageData.testimonials.text}
+            users={landingPageData.testimonials.users}
           />
           <Team
-            t={landingPageData.team.title}
+            title={landingPageData.team.title}
             txt={landingPageData.team.text}
-            tM={landingPageData.team.teamMembers}
+            teamMembers={landingPageData.team.teamMembers}
           />
           <Contact
-            t={landingPageData.contact.title}
+            title={landingPageData.contact.title}
             txt={landingPageData.contact.text}
             frm={landingPageData.contact.form}
-            cInfo={landingPageData.contact.contactInfo}
-            ad={landingPageData.contact.address}
+            contactInfo={landingPageData.contact.contactInfo}
+            address={landingPageData.contact.address}
             phone={landingPageData.contact.phone}
             email={landingPageData.contact.email}
             social={landingPageData.contact.social}

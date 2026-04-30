@@ -17,14 +17,14 @@ const avatars = {
   avatar6,
 };
 
-const Testimonials = ({ t, txt, tItems }) => {
+const Testimonials = ({ title, text, users }) => {
   return (
     <section className="testimonials" id="testimonials">
       <div className="testimonials__container">
-        <h2>{t}</h2>
+        <h2>{title}</h2>
         <span></span>
         <div className="testimonials__list">
-          {tItems.map((item, i) => (
+          {users.map((item, i) => (
             <div className="testimonial" key={i}>
               <div className="testimonial__avatar">
                 <img src={avatars[item.avatar]} alt={item.name} />

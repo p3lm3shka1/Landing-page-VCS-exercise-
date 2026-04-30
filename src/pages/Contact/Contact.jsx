@@ -1,18 +1,10 @@
 import { useState } from "react";
-import { CiMail, CiPhone, CiLocationOn } from "react-icons/ci";
-import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+
+import * as iconsC from "react-icons/lu";
+
 import "./Contact.scss";
 
-const iconMap = {
-  CiLocationOn: <CiLocationOn />,
-  CiPhone: <CiPhone />,
-  CiMail: <CiMail />,
-  FaFacebookF: <FaFacebookF />,
-  FaTwitter: <FaTwitter />,
-  FaYoutube: <FaYoutube />,
-};
-
-const Contact = ({ t, txt, frm, cInfo, social }) => {
+const Contact = ({ title, txt, frm, contactInfo, social }) => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [error, setError] = useState("");
   const [sent, setSent] = useState(false);
@@ -41,7 +33,7 @@ const Contact = ({ t, txt, frm, cInfo, social }) => {
       <div className="contact__container">
         <div className="contact__info-wrapper">
           <div className="contact__form__title">
-            <h2>{t}</h2>
+            <h2>{title}</h2>
             <span></span>
             <p>{txt}</p>
           </div>
@@ -57,6 +49,7 @@ const Contact = ({ t, txt, frm, cInfo, social }) => {
                 placeholder={frm.name}
                 value={form.name}
                 onChange={handleChange}
+                autoComplete="off"
               />
               <input
                 type="email"
@@ -64,6 +57,7 @@ const Contact = ({ t, txt, frm, cInfo, social }) => {
                 placeholder={frm.email}
                 value={form.email}
                 onChange={handleChange}
+                autoComplete="off"
               />
             </div>
             <textarea
@@ -79,42 +73,36 @@ const Contact = ({ t, txt, frm, cInfo, social }) => {
           </form>
         </div>
         <div className="contact__info">
-          <h3>{cInfo.title}</h3>
+          <h3>{contactInfo.title}</h3>
 
           <h4>
-            {iconMap[cInfo.address.icon]} {cInfo.address.text}
+            {iconsC[contactInfo.address.icon]()} {contactInfo.address.text}
           </h4>
           <a
             href="https://maps.app.goo.gl/eqZ4nLEq55h9afur5"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {cInfo.address.link}
+            {contactInfo.address.link}
           </a>
 
           <h4>
-            {iconMap[cInfo.phone.icon]} {cInfo.phone.text}
+            {iconsC[contactInfo.phone.icon]()} {contactInfo.phone.text}
           </h4>
-          <a href={`tel:${cInfo.phone.link}`}>{cInfo.phone.link}</a>
+          <a href={`tel:${contactInfo.phone.link}`}>{contactInfo.phone.link}</a>
 
           <h4>
-            {iconMap[cInfo.email.icon]} {cInfo.email.text}
+            {iconsC[contactInfo.email.icon]()} {contactInfo.email.text}
           </h4>
-          <a href={cInfo.email.link}>
-            {cInfo.email.link.replace("mailto:", "")}
+          <a href={contactInfo.email.link}>
+            {contactInfo.email.link.replace("mailto:", "")}
           </a>
         </div>
       </div>
       <div className="contact__socials">
         {social.map(({ url, icon }, idx) => (
-          <a
-            href={url}
-            key={idx}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={icon}
-          >
-            {iconMap[icon]}
+          <a href={url} key={idx} target="_blank" rel="noopener noreferrer">
+            {iconsC[icon]()}
           </a>
         ))}
       </div>

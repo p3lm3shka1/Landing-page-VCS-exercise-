@@ -1,14 +1,10 @@
-import { IoCheckmark } from "react-icons/io5";
+import * as icons from "react-icons/io5";
 
 import "./About.scss";
 
 import aboutImg from "../../assets/images/about.jpg";
 
-const iconMap = {
-  IoCheckmark: <IoCheckmark />,
-};
-
-const About = ({ t, text, why, whyItemsA, whyItemsB }) => {
+const About = ({ title, text, whyUs, whyItemsA, whyItemsB }) => {
   return (
     <section className="about" id="about">
       <div className="about__container">
@@ -17,16 +13,18 @@ const About = ({ t, text, why, whyItemsA, whyItemsB }) => {
         </div>
         <div className="about__info">
           <div className="about__title">
-            <h2>{t}</h2>
-            <span className="about__title-underline"></span>
+            <h2>{title}</h2>
+            <span className="about__title__underline"></span>
           </div>
           <p className="about__desc">{text}</p>
-          <h4 className="about__subtitle">{why}</h4>
+          <h4 className="about__subtitle">{whyUs}</h4>
           <div className="about__features">
             <ul>
               {whyItemsA.map((item, i) => (
                 <li key={i}>
-                  <span className="about__icon">{iconMap[item.icon]}</span>
+                  <span className="about__features__icon">
+                    {icons[item.icon]()}
+                  </span>
                   {item.title}
                 </li>
               ))}
@@ -34,7 +32,9 @@ const About = ({ t, text, why, whyItemsA, whyItemsB }) => {
             <ul>
               {whyItemsB.map((item, i) => (
                 <li key={i}>
-                  <span className="about__icon">{iconMap[item.icon]}</span>
+                  <span className="about__features__icon">
+                    {icons[item.icon]()}
+                  </span>
                   {item.title}
                 </li>
               ))}
