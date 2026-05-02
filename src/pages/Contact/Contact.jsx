@@ -1,30 +1,50 @@
 import { useState } from "react";
-
 import * as iconsC from "react-icons/lu";
-
 import "./Contact.scss";
 
 const Contact = ({ title, txt, frm, contactInfo, social }) => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [error, setError] = useState("");
+  const [errors, setErrors] = useState({});
   const [sent, setSent] = useState(false);
   const [sentName, setSentName] = useState("");
 
+  const validate = (values) => {
+    const nextErrors = {};
+
+    if (!values.name.trim()) nextErrors.name = "Required field";
+    if (!values.email.trim()) nextErrors.email = "Required field";
+    if (!values.message.trim()) nextErrors.message = "Required field";
+
+    if (values.email.trim()) {
+      const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email);
+      if (!ok) nextErrors.email = "Invalid email";
+    }
+
+    return nextErrors;
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-    setError("");
+
+    setForm((prev) => {
+      const next = { ...prev, [name]: value };
+
+      return next;
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!form.name || !form.email || !form.message) {
-      setError("Please fill in all fields!");
-      return;
-    }
+
+    const nextErrors = validate(form);
+    setErrors(nextErrors);
+
+    if (Object.keys(nextErrors).length > 0) return;
+
     setSent(true);
     setSentName(form.name);
     setForm({ name: "", email: "", message: "" });
+    setErrors({});
     setTimeout(() => setSent(false), 5000);
   };
 
@@ -37,41 +57,57 @@ const Contact = ({ title, txt, frm, contactInfo, social }) => {
             <span></span>
             <p>{txt}</p>
           </div>
-          <form
-            className="contact__form"
-            onSubmit={handleSubmit}
-            autoComplete="off"
-          >
+
+          <form className="contact__form" onSubmit={handleSubmit} noValidate>
             <div className="contact__form__row">
-              <input
-                type="text"
-                name="name"
-                placeholder={frm.name}
-                value={form.name}
-                onChange={handleChange}
-                autoComplete="off"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder={frm.email}
-                value={form.email}
-                onChange={handleChange}
-                autoComplete="off"
-              />
+              <div className="contact__field">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder={frm.name}
+                  value={form.name}
+                  onChange={handleChange}
+                  className={errors.name ? "is-invalid" : ""}
+                />
+                {errors.name && (
+                  <div className="contact__field-error">{errors.name}</div>
+                )}
+              </div>
+
+              <div className="contact__field">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder={frm.email}
+                  value={form.email}
+                  onChange={handleChange}
+                  className={errors.email ? "is-invalid" : ""}
+                />
+                {errors.email && (
+                  <div className="contact__field-error">{errors.email}</div>
+                )}
+              </div>
             </div>
-            <textarea
-              name="message"
-              placeholder={frm.message}
-              value={form.message}
-              onChange={handleChange}
-            />
-            {error && <div className="contact__form__error">{error}</div>}
+
+            <div className="contact__field">
+              <textarea
+                name="message"
+                placeholder={frm.message}
+                value={form.message}
+                onChange={handleChange}
+                className={errors.message ? "is-invalid" : ""}
+              />
+              {errors.message && (
+                <div className="contact__field-error">{errors.message}</div>
+              )}
+            </div>
+
             <button type="submit" className="contact__form__btn">
               {frm.buttonText}
             </button>
           </form>
         </div>
+
         <div className="contact__info">
           <h3>{contactInfo.title}</h3>
 
@@ -99,6 +135,7 @@ const Contact = ({ title, txt, frm, contactInfo, social }) => {
           </a>
         </div>
       </div>
+
       <div className="contact__socials">
         {social.map(({ url, icon }, idx) => (
           <a href={url} key={idx} target="_blank" rel="noopener noreferrer">
@@ -106,6 +143,7 @@ const Contact = ({ title, txt, frm, contactInfo, social }) => {
           </a>
         ))}
       </div>
+
       {sent && (
         <div className="contact__overlay">
           <div className="contact__modal">

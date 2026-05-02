@@ -156,14 +156,6 @@
     }
   }
 
-  &__form__error {
-    color: $error;
-    border-color: $error;
-    font-size: 18px;
-    font-weight: 500;
-    text-align: left;
-  }
-
   &__overlay {
     position: fixed;
     z-index: 2000;
@@ -181,5 +173,24 @@
     min-width: 220px;
     text-align: center;
     letter-spacing: 1px;
+  }
+
+  &__field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__field-error {
+    margin-top: $p-0-5;
+    font-size: 12px;
+    font-weight: 600;
+    color: $error;
+    letter-spacing: 0.2px;
+  }
+
+  input.is-invalid,
+  textarea.is-invalid {
+    border: 2px solid $error !important;
   }
 }
